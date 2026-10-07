@@ -1,0 +1,105 @@
+/* «Мокко» — цвета, шрифт и свои блоки поверх kit.css */
+:root{--font:"Onest",system-ui,-apple-system,"Segoe UI",sans-serif;--tint:#f8f1ea;--brand:#b9623f;--accent:#e4483b;--accent-ink:#fff;--ink:#241815;--muted:#6f615a;--line:#ebe0d6;--peach:#ffe1c8;
+  --sun:radial-gradient(120% 100% at 50% 0,#fff5ea 0,#f9dcc2 55%,#efba93 120%)}
+h1 b{font-weight:800}
+.band-soft,.hero2{background:#faf5f0}
+.hot{background:var(--ink);color:#ffe1c8}
+.mark.soft,.q-tag{background:var(--peach)}
+.btn3d{background:linear-gradient(180deg,#f4634f,#db392d);color:#fff;box-shadow:0 5px 0 #a3261b,0 18px 28px -14px rgba(219,57,45,.7)}
+.btn3d:hover{box-shadow:0 2px 0 #a3261b,0 10px 20px -12px rgba(219,57,45,.7)}
+.btn3d.dark{background:linear-gradient(180deg,#42302a,#241815);color:#ffe1c8;box-shadow:0 5px 0 #0e0907,0 18px 28px -14px rgba(0,0,0,.55)}
+.bar i{background:linear-gradient(90deg,var(--ink),var(--accent))}
+.quiz2-top .bar{background:#f3ebe3}
+.quiz2-top .bar i{background:repeating-linear-gradient(135deg,#e4483b 0 12px,#f2796b 12px 24px)}
+.q-opt input{accent-color:var(--accent)}
+.ctx{background:var(--peach)}
+.ticks li::before{background:var(--ink) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23ffe1c8' stroke-width='3.2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M6 12.5l4 4 8-9'/%3E%3C/svg%3E") center/14px no-repeat}
+.hs-bar i{background:var(--accent)}
+.shots::before{background:linear-gradient(90deg,var(--accent) calc(min(1,max(0,(var(--p) - .18)*2.4))*100%),rgba(0,0,0,.1) 0)}
+.shot2 .num{color:#fff}
+.stack-card .price-big{background:var(--peach)}
+.stack-card .btn{margin-top:4px}
+.band-sun .bubble{box-shadow:0 16px 30px -20px rgba(120,60,20,.5)}
+.gift2,.quote-pin,.fact-chips li{background:#faf5f0}
+.band-soft .fact-chips li,.panel .fact-chips li{background:#fff}
+.panel{background:#fff;box-shadow:0 12px 28px -18px rgba(36,24,21,.28)}
+.panel .fact-chips li{background:#faf5f0}
+.round{color:#25a35a}
+.logo b{font-weight:800;font-size:24px;letter-spacing:-.02em}
+.nav a.is-cur,.subnav a.is-cur{background:var(--ink);color:#fff}
+.wm{color:rgba(36,24,21,.04)}
+
+/* вторая строка навигации: страницы услуг на планшете и телефоне */
+.subnav{display:none;background:#fff;border-bottom:1px solid var(--line)}
+.subnav .wrap{display:flex;gap:6px;overflow-x:auto;padding-block:8px;scrollbar-width:none}
+.subnav .wrap::-webkit-scrollbar{display:none}
+.subnav a{flex:none;padding:8px 14px;border-radius:999px;background:#faf5f0;font-size:14px;font-weight:700;white-space:nowrap}
+@media (max-width:1080px){.subnav{display:block}}
+
+/* фото в рамке вместо вырезанной фигуры */
+.hero2-fig .framed{align-self:center;width:100%;max-width:520px;aspect-ratio:4/3;object-fit:cover;border:10px solid #fff;border-radius:6px;box-shadow:0 26px 30px -18px rgba(0,0,0,.4);transform:rotate(calc(2.5deg - var(--p,.5)*3deg)) translateY(calc((var(--p,.5) - .5)*30px));will-change:transform}
+.pg-index .hero2-fig{align-self:center}
+.guard-fig .framed-ph{aspect-ratio:4/5;max-width:440px;margin-inline:auto;border:10px solid #fff;border-radius:6px;box-shadow:0 26px 30px -18px rgba(0,0,0,.4);transform:rotate(calc(-7deg + var(--p,.5)*9deg));will-change:transform}
+.pg-pirsing .orbit .main img{object-position:center top}
+.bubble .ph.thumb.icoth{border-radius:0;background:none}
+.bubble .ph.thumb.icoth img{object-fit:contain;mix-blend-mode:multiply}
+
+/* прайс группами */
+.pl-t{margin:26px 0 10px;font-size:15px;letter-spacing:.08em;text-transform:uppercase;color:var(--brand)}
+.panel .plist+.fact-chips{margin-top:26px}
+.panel .center-row{margin-top:26px}
+
+.link-book{justify-self:start;font-weight:800;text-decoration:underline;text-underline-offset:4px}
+.lead2-nofig .lead2-copy{min-height:0;align-content:center}
+.revs-2{grid-template-columns:repeat(2,1fr);max-width:900px}
+.foot-more{flex-basis:100%;font-size:15px;color:var(--ink)}
+.foot-more a{font-weight:700}
+@media (max-width:760px){.revs-2{grid-template-columns:1fr}.shot2 .num{color:#fff}}
+.mark.soft{color:var(--ink)}
+.logo span{white-space:nowrap}
+.hero2-copy,.hero2-side{position:relative;z-index:2}
+@media (min-width:1081px){.pg-tatu .hero2-fig .cut{max-width:124%;margin:0 -16% 0 8%}}
+.guard-fig .cut{width:auto;max-width:100%;max-height:520px;margin-inline:auto}
+.guard{align-items:center}
+@media (min-width:1081px){.pg-pirsing .hero2-fig .cut{max-width:140%;margin:0 -12% 0 0}.pg-perm .hero2-fig .cut{max-width:132%;margin:0 -8% 0 0}}
+.hero2 h1 b{color:var(--accent)}
+
+/* правки после проверки */
+.live2-fig .cut{opacity:1!important}
+.q-card .ph img[src*="ask"]{object-fit:contain!important;background:#fff}
+.q-card small{font-size:14px}.q-tag{font-size:12px}
+.stack-no{font-size:16px}
+.work figcaption{font-size:16px}
+.revs-2{margin-inline:auto}
+.band-sun .bubble{font-size:16px;line-height:1.35}
+.band-sun .bubble b{display:block;font-size:19px;line-height:1.2;margin-bottom:4px}
+@media (min-width:1081px){
+  .stack{max-width:1040px;margin-inline:auto}
+  .stack-card{grid-template-columns:minmax(0,.85fr) minmax(0,1.15fr)}
+  .stack-card .ph{aspect-ratio:5/4;max-height:440px}
+  .pg-tatu .hero2-in{grid-template-columns:minmax(0,1.2fr) minmax(0,.9fr) 290px}
+  .pg-tatu .hero2-fig .cut{max-width:175%;max-height:560px;margin:0 -55% 0 0;-webkit-mask-image:linear-gradient(90deg,#000 62%,transparent 86%);mask-image:linear-gradient(90deg,#000 62%,transparent 86%)}
+  .pg-perm .hero2-fig .cut{max-width:118%;margin:0 -6% 0 6%}
+  .pg-index .hero2-in{grid-template-columns:minmax(0,1.05fr) minmax(0,1fr) 290px}
+  .hero2-fig .framed{max-width:620px}
+  .hs-track .work{width:min(40vh,360px)}.hs-track .work:first-child{width:min(56vh,500px)}
+}
+@media (max-width:760px){
+  .btn-2{display:none}
+  .hero2 .btn3d{font-size:15px;min-height:60px}
+  .subnav .wrap{flex-wrap:wrap;overflow:visible}
+  .subnav a{font-size:13px;padding:7px 12px}
+  .pg-index .hero2-fig{margin-top:24px}
+  .band-sun .bubble{font-size:14px}.band-sun .bubble b{font-size:16px}
+}
+.hero2 .btn3d{flex-direction:column}
+.btn-2 br{display:none}
+@media (min-width:1081px){
+  .pg-laser .hero2-fig .cut{max-width:104%;margin-left:12%}
+  .pg-kosm .hero2-fig .cut{margin-left:8%}
+}
+@media (min-width:1081px){
+  .pg-tatu .hero2-fig,.pg-laser .hero2-fig{justify-content:flex-start}
+  .pg-tatu .hero2-fig .cut{max-width:158%;margin:0;-webkit-mask-image:linear-gradient(90deg,#000 58%,transparent 84%);mask-image:linear-gradient(90deg,#000 58%,transparent 84%)}
+  .pg-laser .hero2-fig .cut{max-width:100%;margin:0}
+}
