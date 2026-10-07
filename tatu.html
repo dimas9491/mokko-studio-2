@@ -6,9 +6,10 @@
 <title>Татуировка в Марьино от 3&nbsp;000&nbsp;₽&nbsp;— студия «Мокко» у метро Братиславская</title>
 <meta name="description" content="Художественная татуировка в студии «Мокко» на ул. Перерва, 31: до 3 см&nbsp;— 3&nbsp;000&nbsp;₽, 5–10 см&nbsp;— от 5&nbsp;000&nbsp;₽. Бесплатная консультация, эскиз и цену утверждаете до сеанса.">
 <script>document.documentElement.classList.add('js')</script>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Onest:wght@400;500;700;800&display=swap" rel="stylesheet">
+<link rel="preload" href="fonts/onest-cyr.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="fonts/onest-lat.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="fonts/onest-latext.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" as="image" href="img/t-hero.webp" fetchpriority="high">
 <link rel="stylesheet" href="kit.css">
 <link rel="stylesheet" href="site.css">
 </head>
@@ -32,7 +33,7 @@
 <nav class="subnav"><div class="wrap"><a href="kosmetologiya.html">Косметология</a><a href="epilyaciya.html">Эпиляция</a><a href="tatu.html" class="is-cur">Тату</a><a href="pirsing.html">Пирсинг</a><a href="permanent.html">Перманент</a></div></nav>
 <main>
 <section class="hero2" data-scroll>
-  <div class="hero2-bg"><img decoding="async" src="img/t-bg.webp" alt=""></div>
+  <div class="hero2-bg"><img decoding="async" fetchpriority="low" src="img/t-bg.webp" alt=""></div>
   <div class="wrap hero2-in">
     <div class="hero2-copy">
       <h1 data-anim="up">Татуировка в Марьино <b>от 3&nbsp;000&nbsp;₽:</b> эскиз и цену утверждаете до сеанса</h1>
@@ -42,7 +43,7 @@
       <p class="who-line">На фото&nbsp;— сеанс в тату-кабинете студии «Мокко»</p>
     </div>
     <div class="hero2-fig" data-anim="zoom">
-      <img decoding="async" class="cut" src="img/t-hero.webp" alt="Мастер студии «Мокко» делает татуировку">
+      <img fetchpriority="high" class="cut" src="img/t-hero.webp" alt="Мастер студии «Мокко» делает татуировку">
     </div>
     <ul class="hero2-side" data-stagger="left"><li class="perk"><span class="ph ico" data-ph="ico-a3"><img decoding="async" src="img/ico-a3.webp" alt=""></span><span><b>Больше 22 лет</b> студия работает у метро Братиславская</span></li><li class="perk"><span class="ph ico" data-ph="ico-b3"><img decoding="async" src="img/ico-b3.webp" alt=""></span><span><b>Свой лазер:</b> сводим старые татуировки от 4&nbsp;500&nbsp;₽</span></li><li class="perk"><span class="ph ico" data-ph="ico-a2"><img decoding="async" src="img/ico-a2.webp" alt=""></span><span><b>4,8 на Яндекс Картах:</b> 471 оценка и награда «Хорошее место 2026»</span></li></ul>
   </div>
@@ -58,9 +59,9 @@
   <div class="wrap">
     <header class="sec-head center"><h2><b>4 факта о тату-кабинете «Мокко»:</b> цена, перекрытие, консультация, дорога</h2></header>
     <div class="orbit">
-      <div class="orbit-col" data-stagger="left"><div class="card bubble"><span class="ph thumb icoth" data-ph="ico-a7"><img decoding="async" src="img/ico-a7.webp" alt=""></span><span><b>Цена по размеру:</b> 3&nbsp;000&nbsp;₽, 5&nbsp;000&nbsp;₽, от 10&nbsp;000&nbsp;₽&nbsp;— называем до сеанса</span></div><div class="card bubble"><span class="ph thumb icoth" data-ph="ico-b1"><img decoding="async" src="img/ico-b1.webp" alt=""></span><span><b>Перекрываем шрамы</b> и старые татуировки новым рисунком</span></div></div>
+      <div class="orbit-col" data-stagger="left"><div class="card bubble"><span class="ph thumb icoth" data-ph="ico-a7"><img decoding="async" src="img/ico-a7.webp" alt="" loading="lazy"></span><span><b>Цена по размеру:</b> 3&nbsp;000&nbsp;₽, 5&nbsp;000&nbsp;₽, от 10&nbsp;000&nbsp;₽&nbsp;— называем до сеанса</span></div><div class="card bubble"><span class="ph thumb icoth" data-ph="ico-b1"><img decoding="async" src="img/ico-b1.webp" alt="" loading="lazy"></span><span><b>Перекрываем шрамы</b> и старые татуировки новым рисунком</span></div></div>
       <span class="ph main" data-scroll data-ph="t-orbit"><img decoding="async" src="img/t-orbit.webp" alt="Татуировка со змеёй и лотосом, работа студии" loading="lazy"></span>
-      <div class="orbit-col" data-stagger="right"><div class="card bubble"><span class="ph thumb icoth" data-ph="ico-a9"><img decoding="async" src="img/ico-a9.webp" alt=""></span><span><b>Консультация&nbsp;— 0&nbsp;₽:</b> мастер покажет примеры работ и подберёт место</span></div><div class="card bubble"><span class="ph thumb icoth" data-ph="ico-a4"><img decoding="async" src="img/ico-a4.webp" alt=""></span><span><b>390 м от метро Братиславская,</b> ежедневно с 10:00 до 21:00</span></div></div>
+      <div class="orbit-col" data-stagger="right"><div class="card bubble"><span class="ph thumb icoth" data-ph="ico-a9"><img decoding="async" src="img/ico-a9.webp" alt="" loading="lazy"></span><span><b>Консультация&nbsp;— 0&nbsp;₽:</b> мастер покажет примеры работ и подберёт место</span></div><div class="card bubble"><span class="ph thumb icoth" data-ph="ico-a4"><img decoding="async" src="img/ico-a4.webp" alt="" loading="lazy"></span><span><b>390 м от метро Братиславская,</b> ежедневно с 10:00 до 21:00</span></div></div>
     </div>
   </div>
 </section>
@@ -81,7 +82,7 @@
       <aside>
         <div class="ctx"><span class="ph" data-ph="t-side"><img decoding="async" src="img/t-side.webp" alt="Тату-кабинет студии «Мокко»: стена эскизов и рабочее место мастера" loading="lazy"></span></div>
         <p class="gifts-t">После ответов вы получите:</p>
-        <div class="gifts"><div class="gift2">Расчёт стоимости <b>от мастера</b><span class="ph ico" data-ph="ico-a8"><img decoding="async" src="img/ico-a8.webp" alt=""></span></div><div class="gift2">Приглашение на консультацию: <b>0&nbsp;₽, с примерами работ в вашем стиле</b><span class="ph ico" data-ph="ico-a6"><img decoding="async" src="img/ico-a6.webp" alt=""></span></div></div>
+        <div class="gifts"><div class="gift2">Расчёт стоимости <b>от мастера</b><span class="ph ico" data-ph="ico-a8"><img decoding="async" src="img/ico-a8.webp" alt="" loading="lazy"></span></div><div class="gift2">Приглашение на консультацию: <b>0&nbsp;₽, с примерами работ в вашем стиле</b><span class="ph ico" data-ph="ico-a6"><img decoding="async" src="img/ico-a6.webp" alt="" loading="lazy"></span></div></div>
       </aside>
     </div>
   </div>
@@ -95,7 +96,7 @@
 <section class="band band-soft hs" id="works" data-hscroll>
   <div class="hs-pin">
     <div class="wrap"><header class="sec-head"><h2><b>10 работ студии:</b> реализм, графика, цвет и орнамент</h2></header></div>
-    <div class="hs-track"><figure class="work"><span class="ph solo" data-ph="t-w1"><img decoding="async" src="img/t-w1.webp" alt="Кот, реализм"></span><figcaption>Кот, реализм</figcaption></figure><figure class="work"><span class="ph solo" data-ph="t-w2"><img decoding="async" src="img/t-w2.webp" alt="Волк с листьями, цвет"></span><figcaption>Волк с листьями, цвет</figcaption></figure><figure class="work"><span class="ph solo" data-ph="t-w3"><img decoding="async" src="img/t-w3.webp" alt="Лиса, цветной реализм"></span><figcaption>Лиса, цветной реализм</figcaption></figure><figure class="work"><span class="ph solo" data-ph="t-w4"><img decoding="async" src="img/t-w4.webp" alt="Корабль на плече"></span><figcaption>Корабль на плече</figcaption></figure><figure class="work"><span class="ph solo" data-ph="t-w5"><img decoding="async" src="img/t-w5.webp" alt="Цветы на ключице, графика"></span><figcaption>Цветы на ключице, графика</figcaption></figure><figure class="work"><span class="ph solo" data-ph="t-w6"><img decoding="async" src="img/t-w6.webp" alt="Орнамент вдоль позвоночника"></span><figcaption>Орнамент вдоль позвоночника</figcaption></figure><figure class="work"><span class="ph solo" data-ph="t-w7"><img decoding="async" src="img/t-w7.webp" alt="Космонавт, чёрно-серая"></span><figcaption>Космонавт, чёрно-серая</figcaption></figure><figure class="work"><span class="ph solo" data-ph="t-w8"><img decoding="async" src="img/t-w8.webp" alt="Орнамент на плече"></span><figcaption>Орнамент на плече</figcaption></figure><figure class="work"><span class="ph solo" data-ph="t-w9"><img decoding="async" src="img/t-w9.webp" alt="Цветы на руке, тонкие линии"></span><figcaption>Цветы на руке, тонкие линии</figcaption></figure><figure class="work"><span class="ph solo" data-ph="t-w10"><img decoding="async" src="img/t-w10.webp" alt="Лиса на бедре, графика"></span><figcaption>Лиса на бедре, графика</figcaption></figure></div>
+    <div class="hs-track"><figure class="work"><span class="ph solo" data-ph="t-w1"><img decoding="async" src="img/t-w1.webp" alt="Кот, реализм" loading="lazy"></span><figcaption>Кот, реализм</figcaption></figure><figure class="work"><span class="ph solo" data-ph="t-w2"><img decoding="async" src="img/t-w2.webp" alt="Волк с листьями, цвет" loading="lazy"></span><figcaption>Волк с листьями, цвет</figcaption></figure><figure class="work"><span class="ph solo" data-ph="t-w3"><img decoding="async" src="img/t-w3.webp" alt="Лиса, цветной реализм" loading="lazy"></span><figcaption>Лиса, цветной реализм</figcaption></figure><figure class="work"><span class="ph solo" data-ph="t-w4"><img decoding="async" src="img/t-w4.webp" alt="Корабль на плече" loading="lazy"></span><figcaption>Корабль на плече</figcaption></figure><figure class="work"><span class="ph solo" data-ph="t-w5"><img decoding="async" src="img/t-w5.webp" alt="Цветы на ключице, графика" loading="lazy"></span><figcaption>Цветы на ключице, графика</figcaption></figure><figure class="work"><span class="ph solo" data-ph="t-w6"><img decoding="async" src="img/t-w6.webp" alt="Орнамент вдоль позвоночника" loading="lazy"></span><figcaption>Орнамент вдоль позвоночника</figcaption></figure><figure class="work"><span class="ph solo" data-ph="t-w7"><img decoding="async" src="img/t-w7.webp" alt="Космонавт, чёрно-серая" loading="lazy"></span><figcaption>Космонавт, чёрно-серая</figcaption></figure><figure class="work"><span class="ph solo" data-ph="t-w8"><img decoding="async" src="img/t-w8.webp" alt="Орнамент на плече" loading="lazy"></span><figcaption>Орнамент на плече</figcaption></figure><figure class="work"><span class="ph solo" data-ph="t-w9"><img decoding="async" src="img/t-w9.webp" alt="Цветы на руке, тонкие линии" loading="lazy"></span><figcaption>Цветы на руке, тонкие линии</figcaption></figure><figure class="work"><span class="ph solo" data-ph="t-w10"><img decoding="async" src="img/t-w10.webp" alt="Лиса на бедре, графика" loading="lazy"></span><figcaption>Лиса на бедре, графика</figcaption></figure></div>
     <div class="wrap"><div class="hs-bar"><i></i></div></div>
   </div>
 </section>
@@ -149,6 +150,6 @@
 <nav class="dock"><a class="btn btn-ghost" href="tel:+79039614722"><svg><use href="#i-phone"/></svg> Позвонить</a><a class="btn btn-primary" href="#quiz">Рассчитать</a></nav>
 
 <script>window.SITE={endpoint:'',telegram:'',whatsapp:'https://wa.me/79039614722',phone:'+7 (903) 961-47-22'}</script>
-<script src="kit.js"></script>
+<script src="kit.js" defer></script>
 </body>
 </html>
